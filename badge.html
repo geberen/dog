@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qwe</title>
+    <link rel="stylesheet" href="badge.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>rozet alma seyi</h1>
+        </div>
+
+        <div class="main-content">
+            <div class="token-section">
+                <label for="token">Discord Token:</label>
+                <input type="password" id="token" placeholder="tokeni gir ama cift tirnaksiz" >
+                <button id="toggleToken" class="toggle-btn"></button>
+            </div>
+
+            <div class="badge-selection">
+                <h3>hangi rozet?</h3>
+                <div class="badge-options">
+                    <div class="badge-option" data-house="2">
+                        <div class="badge-icon brilliance"><img src="bravery.png" alt=""></div>
+                        <span>Bravery </span>
+                    </div>
+                    <div class="badge-option" data-house="3">
+                        <div class="badge-icon balance"><img src="brilliance.png" alt=""></div>
+                        <span>Brilliance</span>
+                    </div>
+                    <div class="badge-option" data-house="1">
+                        <div class="badge-icon bravery"><img src="balance.png" alt=""></div>
+                        <span>Balance </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="setBadge" class="action-btn set-btn" disabled>ekle</button>
+                <button id="removeBadge" class="action-btn remove-btn">sil</button>
+            </div>
+
+            <div class="status-section">
+                <div id="status" class="status-message"></div>
+                <div id="loading" class="loading hidden">
+                    <div class="spinner"></div>
+                    <span>bekle.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="badge.js"></script>
+</body>
+</html>
